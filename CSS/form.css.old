@@ -1,0 +1,35 @@
+.body {
+    background-color: rgb(110, 34, 34);
+}
+
+h1 {
+    color:#fff;
+}
+
+form {
+    margin: 2% 15%;
+    color: #fff;
+    text-align: center;
+
+}
+
+.btn {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #333 !important;
+    color: white !important;
+  }
+
+.space {
+    margin-right: 5px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
