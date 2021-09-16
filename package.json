@@ -1,21 +1,24 @@
 {
   "name": "portfolio-project",
   "version": "1.0.0",
-  "description": "bar project",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run lite",
-    "lite": "lite-server",
-    "scss": "node-sass -o css/ css/"
+    "lite" : "lite-server"
   },
-  "author": "Ashanti Rogers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afrochef22/HappyLife.git"
+  },
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.1.1"
+  "bugs": {
+    "url": "https://github.com/afrochef22/HappyLife/issues"
   },
+  "homepage": "https://github.com/afrochef22/HappyLife#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1",
-    "node-sass": "^4.14.1"
+    "lite-server": "^2.6.1"
   }
 }
