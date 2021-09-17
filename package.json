@@ -9,7 +9,12 @@
     "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
-    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin bar.html -d dist --htmlmin -o dist/bar.html && usemin construction.html -d dist --htmlmin -o dist/construction.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin login.html -d dist --htmlmin -o dist/login.html && usemin sign-up.html -d dist --htmlmin -o dist/sign-up.html",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts"
   },
   "repository": {
     "type": "git",
@@ -22,9 +27,13 @@
   },
   "homepage": "https://github.com/afrochef22/HappyLife#readme",
   "devDependencies": {
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
     "lite-server": "^2.6.1",
     "node-sass": "^4.14.1",
     "onchange": "^7.0.0",
-    "parallelshell": "3.0.1"
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   }
 }
