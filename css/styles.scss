@@ -1,13 +1,29 @@
+$color-primary: rgb(87, 85, 85);
+$color-secondary: rgb(110, 34, 34);
+$color-white: #fff;
+$color-black: #333;
+$star-color: rgb(175, 3, 3);
+
+
+
+
 .body {
-    background-color: rgb(87, 85, 85);
+    background-color: $color-primary;
 }
 
 .nav-color{
-    background-color: rgb(110, 34, 34);
+    background-color: $color-secondary;
 }
 
 .login {
-    margin-bottom: 0;
+    display: flex;
+    
+}
+
+.login {
+    div {
+        margin: 10px 10px 0;
+    }
 }
 
 .nav-container {
@@ -15,11 +31,11 @@
 }
 
 .navbar-nav > li > .dropdown-menu { 
-    background-color: #333; 
+    background-color: $color-black 
 }
 
 .dropdown-menu {
-    background-color: #333;
+    background-color: $color-black;
 }
 
 section img {
@@ -27,14 +43,16 @@ display: block;
 width: 100%;
 height: 400px;
 object-fit: cover;
-position: relative;
 text-align: center;
 
 }
 
+.section-images {
+    position: relative;
+}
 .title {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -44,7 +62,7 @@ text-align: center;
 
 .title h1 {
     font-size: 4.5rem;
-    color: #fff;
+    color: $color-white;
 }
 
 .input-group {
@@ -58,7 +76,7 @@ text-align: center;
 }
 
 .card {
-    border: #333 !important;
+    border: $color-black !important;
 }
 
 .card-container {
@@ -67,9 +85,9 @@ text-align: center;
 
 
 .card-title {
-    background-color: rgb(110, 34, 34);
+    background-color: $color-secondary;
     text-align: center;
-    color: #fff;
+    color: $color-white;
     margin-bottom: 0 !important;
 }
 .card-img {
@@ -85,6 +103,7 @@ text-align: center;
     width: 100%;
     height: 15vw;
     object-fit: cover;
+    padding-bottom: 15px;
 }
 
 .card-margin {
@@ -96,8 +115,14 @@ a:link {
 }
 
 .card-text {
-    color: #333;
+    color: $color-black;
 }
+
+.star {
+    color: $color-secondary;
+}
+
+
 
 #map {
     height: 400px;
@@ -106,25 +131,67 @@ a:link {
     /* The width is the width of the web page */
   }
   
+// reveiws
 
+.review {
+    margin: 5% 15% !important;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text-color {
+    color: $color-white;
+}
+
+.review-container {
+    padding: 10px 20px;
+}
+
+.ratings {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.star-size {
+    font-size: 2rem;
+    
+}
+
+.star-color {
+    color: $star-color;
+}
+
+.bar-image {
+    height: 700px;
+}
+
+.bar-title {
+    top: 20%;
+    left: 50%;
+}
 
 /* forms */
 
 .fBody {
-    background-color: rgb(110, 34, 34);
+    background-color: $color-black;
     text-align: center;
 }
 
 .fBody {
     h1 {
-        color:#fff;
+        color:$color-white;
         padding-top: 10%;
     }
 }
 
 form {
     margin: 2% 15%;
-    color: #fff;
+    color: $color-white;
     text-align: center;
 
 }
@@ -186,7 +253,7 @@ img {
 
 .btn-color{
     background-color: rgb(110, 34, 34) !important;
-    color: #fff !important;
+    color: $color-white !important;
 }
 
 /* footer */
@@ -198,7 +265,7 @@ footer {
 
 footer p {
     margin-bottom: 0;
-    color: #fff;
+    color: $color-white;
 }
 
 

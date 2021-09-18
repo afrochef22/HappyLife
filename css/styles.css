@@ -5,7 +5,10 @@
   background-color: #6e2222; }
 
 .login {
-  margin-bottom: 0; }
+  display: flex; }
+
+.login div {
+  margin: 10px 10px 0; }
 
 .nav-container {
   margin: 0 10%; }
@@ -21,12 +24,14 @@ section img {
   width: 100%;
   height: 400px;
   object-fit: cover;
-  position: relative;
   text-align: center; }
+
+.section-images {
+  position: relative; }
 
 .title {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
@@ -67,7 +72,8 @@ section img {
 .card-img-top {
   width: 100%;
   height: 15vw;
-  object-fit: cover; }
+  object-fit: cover;
+  padding-bottom: 15px; }
 
 .card-margin {
   margin: 10px; }
@@ -78,15 +84,51 @@ a:link {
 .card-text {
   color: #333; }
 
+.star {
+  color: #6e2222; }
+
 #map {
   height: 400px;
   /* The height is 400 pixels */
   width: 50%;
   /* The width is the width of the web page */ }
 
+.review {
+  margin: 5% 15% !important;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px; }
+
+.text-color {
+  color: #fff; }
+
+.review-container {
+  padding: 10px 20px; }
+
+.ratings {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px; }
+
+.star-size {
+  font-size: 2rem; }
+
+.star-color {
+  color: #af0303; }
+
+.bar-image {
+  height: 700px; }
+
+.bar-title {
+  top: 20%;
+  left: 50%; }
+
 /* forms */
 .fBody {
-  background-color: #6e2222;
+  background-color: #333;
   text-align: center; }
 
 .fBody h1 {
